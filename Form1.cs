@@ -48,7 +48,7 @@ namespace _3DES
             result = encode(key1, str);
             key1Temp = keyTemp;
 
-            /*Дешифрование вторым ключом*/
+            /*Шифрование вторым ключом*/
 
             key2 = keyGen();
             result = encode(key2, result);
@@ -136,7 +136,7 @@ namespace _3DES
             result = decode(key3, key3Temp, str);
             key3Temp = keyTemp;
 
-            /*Шифрование вторым ключом*/
+            /*Дешифрование вторым ключом*/
 
             result = decode(key2, key2Temp, result);
             key2Temp = keyTemp;
